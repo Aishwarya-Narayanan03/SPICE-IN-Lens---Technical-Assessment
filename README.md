@@ -1,4 +1,4 @@
-# SPICE-IN-Lens---Technical-Assessment
+# SPICE-IN-Lens-Technical-Assessment
 # License
 This project is licensed under the MIT License
 # Selenium Test Automation Project
