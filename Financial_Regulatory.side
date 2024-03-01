@@ -1,0 +1,98 @@
+{
+  "id": "70932977-7d9c-4d01-8065-94d65be6e1bf",
+  "version": "2.0",
+  "name": "Technical Assessment",
+  "url": "https://www.sec.gov",
+  "tests": [{
+    "id": "cdbe5ab4-2a57-441c-90f3-34261f1f59b8",
+    "name": "Financial Regulatory",
+    "commands": [{
+      "id": "0ecf31d4-e8ce-4624-a2fd-e98fae9e466f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d3271c2-0642-40d2-8836-66308723c639",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b4657d8c-1fdd-4084-b7e0-d81631217802",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sfHover > .menu__link",
+      "targets": [
+        ["css=.sfHover > .menu__link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Filings')])[2]", "xpath:link"],
+        ["xpath=//ul[@id='home-menu']/li[6]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/edgar')])[2]", "xpath:href"],
+        ["xpath=//div/ul/li[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35f89624-db22-4533-ac8e-4ce59a614f4a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Forms List",
+      "targets": [
+        ["linkText=Forms List", "linkText"],
+        ["css=nav .item-forms-list > .menu__link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Forms List')])[3]", "xpath:link"],
+        ["xpath=(//ul[@id='section-menu']/li[7]/a)[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/forms')])[3]", "xpath:href"],
+        ["xpath=//nav/ul/li[7]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ed744a1-bbb2-495e-a9ff-3c2067133b1d",
+      "comment": "",
+      "command": "click",
+      "target": "id=edit-field-audience-target-id",
+      "targets": [
+        ["id=edit-field-audience-target-id", "id"],
+        ["name=field_audience_target_id", "name"],
+        ["css=#edit-field-audience-target-id", "css:finder"],
+        ["xpath=//select[@id='edit-field-audience-target-id']", "xpath:attributes"],
+        ["xpath=//form[@id='filter']/div/div/span/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c41965ab-9b7e-4b95-96de-14f5704ab87c",
+      "comment": "",
+      "command": "select",
+      "target": "id=edit-field-audience-target-id",
+      "targets": [],
+      "value": "label=Public Companies"
+    }, {
+      "id": "7cdf433c-f7ae-422a-918a-9aeb358da9c2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Annual report pursuant to Section 13 or 15(d) (PDF)",
+      "targets": [
+        ["linkText=Annual report pursuant to Section 13 or 15(d) (PDF)", "linkText"],
+        ["css=.current a", "css:finder"],
+        ["xpath=//a[contains(text(),'Annual report pursuant to Section 13 or 15(d) (PDF)')]", "xpath:link"],
+        ["xpath=//table[@id='DataTables_Table_0']/tbody/tr/td[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/files/form10-k.pdf')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Annual report pursuant to Section 13 or 15(d) (PDF)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "33e4d034-c0c6-4deb-9cf4-1a419ee46e3d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cdbe5ab4-2a57-441c-90f3-34261f1f59b8"]
+  }],
+  "urls": ["https://www.sec.gov/"],
+  "plugins": []
+}
